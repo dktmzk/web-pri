@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRI</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="dist/styles.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <object id="svgObject" type="image/svg+xml" data="pfd.svg"></object>
-    <div class="right-container">
-        <div class="text-container">
-            <h1 id="helloText">Solusi</h1>
-            <p id="paragraphText">Tentang solusi</p>
-            <button id="myButton">Info</button>
-        </div>
+<body class="flex justify-center items-center h-screen bg-gray-50">
+  <div class="container grid grid-cols-1 md:grid-cols-[55%_45%] gap-2 w-4/5 h-4/5">
+    <div class="left-side grid grid-rows-[70%_30%] gap-2">
+        <div class="left-top relative flex justify-center items-center bg-white ring-2 ring-black/5 pt-2 pl-6 rounded-lg">
+            <object id="svgObject" type="image/svg+xml" data="pfd.svg" class="w-full h-full max-w-fit"></object>
+            <div class="absolute bottom-0 left-0 p-4">
+                <h2 class="text-2xl font-medium tracking-tight text-gray-950 max-lg:text-center">Process Flow Diagram</h2>
+              </div>
+          </div>
+      <div class="left-bottom flex flex-col justify-center items-center ring-2 ring-black/5 bg-white rounded-lg p-4">
         <div class="additional-container">
-            <h2>Simulasi Daur Ulang</h2>
-            <p>Masukkan jumlah dan komposisi baterai</p>
-            <div class="calculator">
-                Li<input type="number" id="num1" placeholder="Enter first number">%<br>
-                Ni<input type="number" id="num2" placeholder="Enter second number">%<br>
-                Jumlah<input type="number" id="num3" placeholder="Enter third number">kg
-                <button id="calculateButton">Calculate</button>
-                <p id="result">Result: </p>
-            </div>
+          <h2 class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Simulasi Daur Ulang</h2>
+          <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Masukkan jumlah dan komposisi baterai</p>
+          <div class="calculator mt-2">
+            <label>Li<input type="number" id="num1" placeholder="Enter first number" class="m-1 p-1 border"></label>% |
+            <label>Ni<input type="number" id="num2" placeholder="Enter second number" class="m-1 p-1 border"></label>% |
+            <label>Jumlah<input type="number" id="num3" placeholder="Enter third number" class="m-1 p-1 border"></label>kg
+            <button id="calculateButton" class="px-4 py-2 bg-green-500 text-white rounded m-1">Calculate</button>
+            <p id="result">Result: </p>
+          </div>
         </div>
-
+      </div>
     </div>
-
+    <div class="right-side grid grid-rows-[40%_60%] gap-2">
+      <div class="right-top flex flex-col justify-start items-center ring-2 ring-black/5 bg-white rounded-lg relative">
+        <div class="text-container w-full mt-2">
+          <h1 id="helloText" class="mt-2 text-2xl mx-5 font-medium tracking-tight text-gray-950 max-lg:text-center">Solusi</h1>
+          <p id="paragraphText" class="mt-2 max-w-full mx-5 text-base text-gray-600 max-lg:text-center text-justify">Tentang solusi</p>
+        </div>
+        <div class="absolute bottom-0 right-0 mb-5 mr-5">
+          <button id="myButton" class="px-4 py-2 bg-blue-500 text-white rounded">Info</button>
+        </div>
+      </div>
+      <div class="right-bottom flex justify-center items-center ring-2 ring-black/5 bg-white rounded-lg">
+        <iframe id="embed-preview-iframe" loading="eager" src="https://embed.pickaxeproject.com/axe?id=Chatbot_DOGWZ&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Real+Head+Pro&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_rb=FFFFFF&c_bb=228DD7&c_bt=000000&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=box&s_b=outline&s_t=0.5&s_to=0&s_r=2&image=hide" width="100%" height="100%"  style="border:0px solid rgba(0, 0, 0, 1);transition:.3s;border-radius:4px;max-width:700px" frameBorder="0"></iframe>
+        <div id="pickaxe-inline-Chatbot_DOGWZ"></div>
+      </div>
+    </div>
   </div>
-  <div class="chat-container">
-    <iframe id="embed-preview-iframe" loading="eager" src="https://embed.pickaxeproject.com/axe?id=Chatbot_DOGWZ&mode=embed_gold&host=beta&theme=light&opacity=100&font_header=Real+Head+Pro&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_rb=FFFFFF&c_bb=228DD7&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=minimalist&s_b=filled&s_t=0.5&s_to=1&s_r=2&image=hide" width="100%" height="500px" class="transition hover:translate-y-[-2px] hover:shadow-[0_6px_20px_0px_rgba(0,0,0,0.15)]" style="border:1px solid rgba(0, 0, 0, 1);transition:.3s;border-radius:4px;max-width:700px" frameBorder="0"></iframe>
-    <div id="pickaxe-inline-Chatbot_DOGWZ"></div>
-</div>
   <script src="script.js"></script>
 </body>
 </html>

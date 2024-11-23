@@ -13,21 +13,6 @@ window.addEventListener('message', function(event) {
     }
 });
 
-document.getElementById('myButton').addEventListener('click', function() {
-    document.getElementById('helloText').textContent = 'Info Solusi';
-    document.getElementById('paragraphText').textContent = 'Penjelasan';
-});
-
-window.addEventListener('message', function(event) {
-    if (event.data.type === 'changeText') {
-        document.getElementById('helloText').textContent = event.data.h1;
-        document.getElementById('paragraphText').textContent = event.data.p;
-    } else if (event.data.type === 'buttonClicked') {
-        document.getElementById('helloText').textContent = event.data.h1;
-        document.getElementById('paragraphText').textContent = event.data.p;
-    }
-});
-
 document.getElementById('calculateButton').addEventListener('click', function() {
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
