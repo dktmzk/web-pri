@@ -163,7 +163,7 @@ function calculate() {
     let k5 = 0;
     let iterationCount = 0;
 
-    while (Math.abs(k5 - 99) > 0.01 && iterationCount < 20) {
+    while (Math.abs(k5 - 99.9) > 0.01 && iterationCount < 100) {
         let j2 = (100 - j10) / 100 * i2;
         let j3 = (100 - j10) / 100 * i3;
         let j4 = (100 - j10) / 100 * i4;
@@ -175,7 +175,7 @@ function calculate() {
         k5 = j5 / j8 * 100;
         console.log("k5: " + k5);
 
-        if (k5 < 99) {
+        if (k5 < 99.9) {
             j10Low = j10;
         } else {
             j10High = j10;
@@ -224,7 +224,7 @@ function calculate() {
     let n3 = 0;
     iterationCount = 0;
 
-    while (Math.abs(n3 - 99) > 0.01 && iterationCount < 20) {
+    while (Math.abs(n3 - 99.8) > 0.01 && iterationCount < 100) {
         let m2 = (100 - m10) / 100 * l2;
         let m3 = m10 / 100 * l3;
         let m4 = (100 - m10) / 100 * l4;
@@ -236,7 +236,7 @@ function calculate() {
         n3 = m3 / m8 * 100;
         console.log("n3: " + n3);
 
-        if (n3 < 99) {
+        if (n3 < 99.8) {
             m10Low = m10;
         } else {
             m10High = m10;
@@ -283,7 +283,7 @@ function calculate() {
     let p10 = (p10Low + p10High) / 2;
     let q2 = 0;
 
-    while (Math.abs(q2 - 99.95) > 0.01) {
+    while (Math.abs(q2 - 99.99) > 0.01) {
         let p2 = p10 / 100 * o2;
         let p3 = (100 - p10) / 100 * o3;
         let p4 = (100 - p10) / 100 * o4;
@@ -295,7 +295,7 @@ function calculate() {
         q2 = p2 / p8 * 100;
         console.log("q2: " + q2);
 
-        if (q2 < 99.95) {
+        if (q2 < 99.99) {
             p10Low = p10;
         } else {
             p10High = p10;
