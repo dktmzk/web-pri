@@ -2,6 +2,7 @@
         <style>
         .hoverPath:hover {
             fill: rgb(200, 200, 200);
+            cursor: pointer;
         }
     </style>
     <script type="text/javascript">
@@ -966,7 +967,7 @@
                   <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 600px; margin-left: 1476px;">
                     <div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); ">
                       <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                        <font style="font-size: 16px;">Co <font style="font-size: 16px;">SO4</font>
+                        <font style="font-size: 16px;">Co<font style="font-size: 16px;">SO4</font>
                         </font>
                       </div>
                     </div>
@@ -1179,7 +1180,7 @@
                 <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                   <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 20px; margin-left: 1180px;">
                     <div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); ">
-                      <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">PC-88A</div>
+                      <div style="display: inline-block; font-size: 16px; font-family: &quot;Helvetica&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">PC-88A</div>
                     </div>
                   </div>
                 </foreignObject>
@@ -1199,9 +1200,9 @@
                   <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 670px; margin-left: 1290px;">
                     <div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); ">
                       <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
-                        <div>60% Na <br />
+                        <font style="font-size: 15px;"><div>60% Na <br />
                         </div>
-                        <div>0,56 M PC-88A</div>
+                        <div>0,56 M PC-88A</div></font>
                       </div>
                     </div>
                   </div>
