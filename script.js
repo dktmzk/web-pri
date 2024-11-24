@@ -2,7 +2,7 @@ let currentContent = '';
 let currentTitle = '';
 
 document.getElementById('myButton').addEventListener('click', function() {
-    const text1 = 'Proses daur ulang baterai EV bekas dimulai dari discharging, pembongkaran, crushing, dan penyaringan, dilanjutkan dengan leaching menggunakan H2SO4. Selanjutnya, mangan diendapkan sebagai MnO2 di Settling Tank Mn, kemudian Al dan Fe dipisahkan menggunakan D2EHPA 10%. Proses pemisahan berikutnya menggunakan PC-88A di Ni Solvent Extraction untuk memisahkan nikel dan lithium, dimana lithium diproses menjadi Li2CO3 di Li Settling Tank, sedangkan nikel dimurnikan melalui Li Scrubber Column dan Ni Stripping Column menjadi NiSO4. Secara paralel, kobalt dipisahkan menggunakan PC-88A 60% Na melalui Co Solvent Extraction dan dimurnikan menjadi CoSO4, dengan sistem daur ulang terintegrasi untuk mengoptimalkan \nperolehan logam berharga.';
+    const text1 = 'Proses daur ulang baterai EV bekas dimulai dari discharging, pembongkaran, crushing, dan penyaringan, dilanjutkan dengan leaching menggunakan H2SO4. Selanjutnya, mangan diendapkan sebagai MnO2 di Settling Tank Mn, kemudian Al dan Fe dipisahkan menggunakan D2EHPA 10%. Proses pemisahan berikutnya menggunakan PC-88A di Ni Solvent Extraction untuk memisahkan nikel dan lithium, dimana lithium diproses menjadi Li2CO3 di Li Settling Tank, sedangkan nikel dimurnikan melalui Li Scrubber Column dan Ni Stripping Column menjadi NiSO4. Secara paralel, kobalt dipisahkan menggunakan PC-88A 60% Na melalui Co Solvent Extraction dan dimurnikan menjadi CoSO4, dengan sistem daur ulang terintegrasi untuk mengoptimalkan perolehan logam berharga.';
     const text2 = 'Selamat datang di platform simulasi daur ulang baterai kendaraan listrik! Platform ini dirancang untuk membantu Anda memahami proses daur ulang baterai EV secara komprehensif dan interaktif. Anda dapat menjelajahi diagram alir proses, mencoba simulator untuk melihat hasil perolehan logam berharga, dan berkonsultasi dengan chatbot kami untuk informasi lebih detail tentang proses daur ulang maupun rekomendasi kebijakan terkait. Kami berharap platform ini dapat menjadi sumber pengetahuan yang bermanfaat bagi siapapun yang tertarik dengan keberlanjutan industri kendaraan listrik di Indonesia.';
     
     const title1 = 'Proses Daur Ulang Baterai EV Bekas';
@@ -42,7 +42,7 @@ function calculate() {
 
     if (isNaN(b2) || isNaN(b3) || isNaN(b4) || isNaN(b5) || isNaN(b6) || isNaN(b7) || isNaN(b9) ||
     b2 < 0 || b3 < 0 || b4 < 0 || b5 < 0 || b6 < 0 || b7 < 0 || b9 <= 0) {
-    document.getElementById('result').textContent = 'Pastikan mengisi semua kolom dengan angka yang valid.';
+    document.getElementById('result').textContent = 'Pastikan mengisi semua kolom dengan angka valid.';
     return;
 }
 
