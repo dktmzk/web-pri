@@ -7,15 +7,35 @@
     <link href="dist/styles.css" rel="stylesheet">
     <style>
       table#resultTable th, table#resultTable td {
-          font-size: 0.75rem;
-          padding: 0rem 0.25rem;
+          font-size: 12px;
+          padding: 0px 4px;
           text-align: center;
       }
       table#resultTable input {
-          font-size: 0.75rem;
-          padding: 0.25rem;
-          width: 4rem;
+          font-size: 12px; 
+          padding: 4px;
+          width: 64px;
           text-align: center;
+      }
+      .large-large-text {
+          font-size: 24px;
+          line-height: 32px;
+      }
+        .large-text {
+      font-size: 20px;
+      line-height: 28px;
+      }
+      .xsmall-text {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .normal-text {
+          font-size: 16px;
+          line-height: 24px;
+      }
+      .small-text {
+          font-size: 14px;
+          line-height: 24px;
       }
   </style>
 </head>
@@ -25,23 +45,23 @@
         <div class="left-top relative flex justify-center items-center bg-white ring-2 ring-black/5 pt-2 pl-6 rounded-xl">
             <object id="svgObject" type="image/svg+xml" data="pfd.svg" class="w-full h-full max-w-fit"></object>
             <div class="absolute bottom-0 left-0 p-4">
-                <h2 class="text-2xl font-medium tracking-tight text-gray-950 max-lg:text-center">Process Flow Diagram</h2>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Klik unit proses untuk informasi lanjut</p>
+                <h2 class="large-large-text font-medium tracking-tight text-gray-950 max-lg:text-center">Process Flow Diagram</h2>
+                <p class="mt-2 max-w-lg small-text text-gray-600 max-lg:text-center">Klik unit proses untuk informasi lanjut</p>
               </div>
         </div>
         <div class="left-bottom grid grid-cols-[25%_75%] gap-2 ring-2 ring-black/5 bg-white rounded-xl px-4">
           <div class="additional-container flex flex-col h-full">
             <div class="flex-grow">
-                <h2 class="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">Simulasi Daur Ulang</h2>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Masukkan jumlah dan komposisi baterai</p>
-                <p id="result" class="mt-2 mr-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"></p>
+                <h2 class="mt-2 large-text font-medium tracking-tight text-gray-950 max-lg:text-center">Simulasi Daur Ulang</h2>
+                <p class="mt-2 max-w-lg small-text text-gray-600 max-lg:text-center">Masukkan jumlah dan komposisi baterai</p>
+                <p id="result" class="mt-2 mr-2 max-w-lg small-text text-gray-600 max-lg:text-center"></p>
             </div>
             <div class="mt-auto mb-4">
                 <button id="calculateButton" class="px-4 py-2 bg-blue-500 text-white rounded m-1">Calculate</button>
             </div>
         </div>
         <div class="pr-2 flex items-center justify-center h-full">
-          <table id="resultTable" class="table-auto w-full border-collapse border border-gray-400 text-xs">
+          <table id="resultTable" class="table-auto w-full border-collapse border border-gray-400 xsmall-text">
               <thead>
                   <tr>
                       <th class="border px-4 py-2"></th>
@@ -133,8 +153,8 @@
     <div class="right-side grid grid-rows-[42%_58%] gap-2">
       <div class="right-top flex flex-col justify-start items-center ring-2 ring-black/5 bg-white rounded-xl relative">
         <div class="text-container w-full mt-2">
-          <h1 id="helloText" class="mt-2 text-2xl mx-7 font-medium tracking-tight text-gray-950 max-lg:text-center">Daur Ulang Baterai EV Bekas K36</h1>
-          <p id="paragraphText" class="mt-2 max-w-full mx-7 text-base text-gray-600 max-lg:text-center text-justify">Selamat datang di platform simulasi daur ulang baterai kendaraan listrik! Platform ini dirancang untuk membantu Anda memahami proses daur ulang baterai EV secara komprehensif dan interaktif. Anda dapat menjelajahi diagram alir proses, mencoba simulator untuk melihat hasil perolehan logam berharga, dan berkonsultasi dengan chatbot kami untuk informasi lebih detail tentang proses daur ulang maupun rekomendasi kebijakan terkait. Kami berharap platform ini dapat menjadi sumber pengetahuan yang bermanfaat bagi siapapun yang tertarik dengan keberlanjutan industri kendaraan listrik di Indonesia.</p>
+          <h1 id="helloText" class="mt-2 large-large-text mx-7 font-medium tracking-tight text-gray-950 max-lg:text-center">Daur Ulang Baterai EV Bekas K36</h1>
+          <p id="paragraphText" class="mt-2 max-w-full mx-7 normal-text text-gray-600 max-lg:text-center text-justify">Selamat datang di platform simulasi daur ulang baterai kendaraan listrik! Platform ini dirancang untuk membantu Anda memahami proses daur ulang baterai EV secara komprehensif dan interaktif. Anda dapat menjelajahi diagram alir proses, mencoba simulator untuk melihat hasil perolehan logam berharga, dan berkonsultasi dengan chatbot kami untuk informasi lebih detail tentang proses daur ulang maupun rekomendasi kebijakan terkait. Kami berharap platform ini dapat menjadi sumber pengetahuan yang bermanfaat bagi siapapun yang tertarik dengan keberlanjutan industri kendaraan listrik di Indonesia.</p>
         </div>
         <div class="absolute bottom-0 right-0 mb-5 mr-5">
           <button id="myButton" class="px-4 py-2 bg-blue-500 text-white rounded">Info</button>
